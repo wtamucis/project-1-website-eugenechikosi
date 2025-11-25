@@ -1,4 +1,103 @@
-.golden-img {
-    max-width: 50%;
-    height: auto;
+
+body {
+  background-color: #b975c073;  
+  color: #2a1a16              
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+main {
+  width: 900px;           
+  margin: 20px auto;      
+  background-color: #a76a8ff6;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 8px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+h2, h3 {   text-align: center;
+  margin-top: 20px;
+}
+
+p {
+  text-align: left;
+  line-height: 1.6;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px 0 20px 0;
+  text-align: center;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 8px;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 8px 14px;
+  border-radius: 4px;
+  border: 1px solid #c27b5f;
+  color: #2a1a16;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Simple “animated” hover effect */
+nav a:hover {
+  background-color: #c27b5f;
+  color: #ffffff;
+}
+
+/* ==== IMAGES ==== */
+
+img {
+  display: block;
+  margin: 15px auto;
+}
+
+/* ==== LISTS ==== */
+
+ul {
+  margin-left: 20px;
+}
+
+form {
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 4px;
+  background-color: #626908;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+  width: 100%;
+  max-width: 400px;
+  padding: 6px;
+  margin-top: 4px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  margin-top: 10px;
+  padding: 8px 16px;
+  border: none;
+  background-color: #c25f9a;  
+  color: #ffffff;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+input[type="submit"]:hover {
+  background-color: #a15d43;
 }

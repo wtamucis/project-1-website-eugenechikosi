@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gina's Pastries - Gina's Pastries Orders</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <main>
+    <header>
+      <h1>Orders</h1> 
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="order.html">Order</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section>
+      <h2>Place an Order</h2>
+
+      <p>
+        Use this form to send a pastry order request to Gina's Pastries.
+        We will review your details and contact you to confirm availability,
+        pricing, and pickup or delivery options.
+      </p>
+
+      <p>
+        Please include as much information as you can, such as the date you
+        need the pastries, how many people you are serving, and any flavor
+        preferences or dietary notes.
+      </p>
+
+      <p>
+        This is a sample form for a class project. Do not enter any real
+        payment information.
+      </p>
+
+      <!--  DELIVERY OPTIONS  -->
+      <h3>Delivery Options</h3>
+      <ul>
+        <li><b>Pickup:</b> Collect your pastries from our shop location.</li>
+        <li><b>Standard Delivery:</b> Delivery within 10 miles — small fee applies.</li>
+        <li><b>Express Delivery:</b> Delivery within 2 hours — additional fee applies.</li>
+      </ul>
+
+      <!-- ORDERS -->
+      <form action="https://www.w3schools.com/action_page.php" method="post">
+        <label for="name">Full Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="quantity">Approximate Number of Guests:</label><br>
+        <input type="number" id="quantity" name="quantity" min="1" max="200"><br><br>
+
+        <label for="flavor">Preferred Flavor:</label><br>
+        <select id="flavor" name="flavor">
+          <option value="vanilla">Vanilla</option>
+          <option value="chocolate">Chocolate</option>
+          <option value="lemon">Lemon</option>
+          <option value="mixed">Mixed Assortment</option>
+        </select><br><br>
+
+        <p>Pickup Time:</p>
+        <input type="radio" id="morning" name="pickup_time" value="morning">
+        <label for="morning">Morning</label><br>
+
+        <input type="radio" id="afternoon" name="pickup_time" value="afternoon">
+        <label for="afternoon">Afternoon</label><br>
+
+        <input type="radio" id="evening" name="pickup_time" value="evening">
+        <label for="evening">Evening</label><br><br>
+
+        <label for="notes">Special Instructions:</label><br>
+        <textarea id="notes" name="notes" rows="4" cols="40"
+                  placeholder="Allergies, celebration type, colors, etc."></textarea><br><br>
+
+        <input type="submit" value="Send Order Request">
+      </form>
+
+      <figure>
+        <img src="https://img.freepik.com/premium-photo/variety-pastries-are-displayed-table_976492-36136.jpg"
+             alt="Delicious baked pastry in a bowl"
+             title="Gina's Pastries - Fresh Pastries"
+             width="400"
+             height="300">
+
+        <figcaption>
+          Image source: https://img.freepik.com/premium-photo/variety-pastries-are-displayed-table_976492-36136.jpg
+        </figcaption>
+      </figure>
+
+    </section>
+  </main>
+</body>
+</html>
